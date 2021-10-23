@@ -54,7 +54,7 @@ def grad_desc(iters, L):
 
 	return (m, c)
 
-gd = grad_desc(100000, 0.0001)
+gd = grad_desc(40000, 0.0001)
 
 cg = minimize(D, [1, 1], method="CG", tol=0.001)
 

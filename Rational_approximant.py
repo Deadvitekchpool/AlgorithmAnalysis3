@@ -65,7 +65,7 @@ def gradient_descent_step(iters):
 	return m, c
 
 
-gd = gradient_descent_step(100000)
+gd = gradient_descent_step(2000)
 
 cg = minimize(D, [1, 1], method="CG", tol=0.001)
 
